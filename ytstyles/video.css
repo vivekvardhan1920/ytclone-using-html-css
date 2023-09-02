@@ -1,0 +1,93 @@
+
+.thumbnail{
+/* width: 300px;  */
+width: 100%;
+/* display: block; */
+}
+
+
+.title{
+margin-top: 0;
+font-weight: 500; 
+font-size: 14px;
+line-height: 20px;
+margin-bottom: 10px;
+}
+
+/* .channel_pics{
+
+
+}
+.video_info{
+
+} */
+.profile_pic{
+width: 36px;
+border-radius: 50px;
+
+}
+.thumbnail_row{
+margin-bottom: 8px;
+position: relative;
+
+}
+.youtuber,
+.video-stats{
+font-size: 12px;
+color: rgb(96,96,96);
+
+}
+.youtuber{
+margin-bottom: 4px;
+}
+.video-info-grid{
+display: grid;
+grid-template-columns: 50px 1fr;
+}
+.video-grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 16px;
+row-gap: 40px;
+/* text-decoration: underline; */
+/* inheritance it passes to other too */
+/* this does not affect(below) */
+/* border: 1px solid red; */
+}
+/* media query */
+@media (max-width:750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width :751px) and(max-width:999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.video-time{
+    background-color: black;
+    font-size: 12px;
+    font-weight: 500px;
+    /* padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px; */
+    padding: 4px;
+    /* padding: 4px 10px 20px 30px; */
+    /* clock wise around */
+    border-radius: 2px;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    /* font-family: roboto,arial; */
+}
